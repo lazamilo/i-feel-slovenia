@@ -228,7 +228,7 @@ svg{width:1em;height:1em;fill:none;stroke:currentColor;stroke-width:1.8;stroke-l
 .receipt-head{display:flex;justify-content:space-between;align-items:baseline}
 .receipt-head strong{font-size:24px;font-weight:600;letter-spacing:-.03em}
 .receipt-head span{font-size:14px;color:var(--ink-3)}
-.receipt-list{list-style:none;display:grid;gap:0;max-height:340px;overflow:auto;border-top:1px dashed rgba(14,16,15,.18)}
+.receipt-list{list-style:none;display:grid;gap:0;max-height:340px;overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:rgba(14,16,15,.2) transparent;border-top:1px dashed rgba(14,16,15,.18);-webkit-mask:linear-gradient(#000 calc(100% - 28px),transparent);mask:linear-gradient(#000 calc(100% - 28px),transparent);padding-bottom:20px}
 .receipt-list li{display:grid;grid-template-columns:44px 1fr auto;gap:12px;align-items:center;padding:12px 0;border-bottom:1px dashed rgba(14,16,15,.12);font-size:15px;animation:rowIn .45s var(--ease)}
 .receipt-list li img{width:44px;height:44px;border-radius:10px;object-fit:cover}
 .receipt-list li .mono{font-size:15px}
@@ -303,7 +303,7 @@ svg{width:1em;height:1em;fill:none;stroke:currentColor;stroke-width:1.8;stroke-l
 .chat-head strong{display:block;font-weight:600;letter-spacing:-.02em}
 .chat-head span{font-size:13px;color:var(--ink-3);display:flex;align-items:center;gap:6px}
 .chat-head span i{width:7px;height:7px;border-radius:50%;background:var(--green)}
-.chat-body{flex:1;overflow:auto;padding:18px;display:flex;flex-direction:column;gap:10px}
+.chat-body{flex:1;overflow:auto;overscroll-behavior:contain;padding:18px;display:flex;flex-direction:column;gap:10px}
 .msg{max-width:86%;padding:12px 15px;border-radius:16px;font-size:15px;line-height:1.45;animation:rowIn .4s var(--ease)}
 .msg.me{align-self:flex-end;background:var(--ink);color:#fff;border-bottom-right-radius:6px}
 .msg.ai{align-self:flex-start;background:var(--bg);border-bottom-left-radius:6px}

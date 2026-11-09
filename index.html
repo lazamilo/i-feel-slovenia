@@ -253,7 +253,7 @@
     <div class="exp-grid" id="expGrid"></div>
     <aside class="receipt" id="receipt">
       <div class="receipt-head"><strong>Vaš načrt</strong><span class="mono" id="rcCount">0 doživetij</span></div>
-      <ul class="receipt-list" id="rcList"><li class="receipt-empty">Dodajte doživetja s klikom na <b>+</b> in tu bo nastal vaš itinerar.</li></ul>
+      <ul class="receipt-list" id="rcList" data-lenis-prevent><li class="receipt-empty">Dodajte doživetja s klikom na <b>+</b> in tu bo nastal vaš itinerar.</li></ul>
       <div class="receipt-sum">
         <div><span>Vmesni seštevek</span><span class="mono" id="rcSub">0,00 €</span></div>
         <div><span>Osebe</span><span class="stepper"><button id="pMinus" aria-label="Manj">−</button><span class="mono" id="pCount">2</span><button id="pPlus" aria-label="Več">+</button></span></div>
@@ -346,7 +346,7 @@
     <img class="alma-portrait" src="assets/img/alma.webp" alt="Alma">
     <div class="chat" id="chat">
       <div class="chat-head"><img src="assets/img/alma-circle.webp" alt=""><div><strong>Alma</strong><span><i></i>Na voljo</span></div></div>
-      <div class="chat-body" id="chatBody"></div>
+      <div class="chat-body" id="chatBody" data-lenis-prevent></div>
       <form class="chat-input" id="chatForm"><input id="chatIn" placeholder="Vprašajte karkoli o Sloveniji" autocomplete="off"><button aria-label="Pošlji"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></form>
     </div>
   </div>
