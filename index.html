@@ -1,0 +1,439 @@
+<!doctype html>
+<html lang="sl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Slovenija | I feel Slovenia</title>
+<meta name="description" content="Uradni slovenski turistični portal. Butična, zelena in raznolika Slovenija: doživetja, destinacije in načrtovanje potovanja.">
+<link rel="icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..800&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Loader -->
+<div class="loader" id="loader">
+  <img src="assets/logo.png" alt="I feel Slovenia">
+  <div class="loader-bar"><span></span></div>
+</div>
+
+<!-- Header -->
+<header class="nav" id="nav">
+  <a class="nav-logo" href="#top" aria-label="I feel Slovenia, domov"><img src="assets/logo.png" alt="I feel Slovenia"></a>
+  <nav class="nav-links" aria-label="Glavni meni">
+    <button class="nav-link" data-mega="dozivetja">Doživetja</button>
+    <button class="nav-link" data-mega="destinacije">Destinacije</button>
+    <button class="nav-link" data-mega="nacrt">Potovalni načrt</button>
+    <a class="nav-link" href="#zgodbe">Zgodbe</a>
+  </nav>
+  <div class="nav-right">
+    <button class="nav-icon" aria-label="Iskanje"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></button>
+    <a class="nav-alma" href="#alma"><img src="assets/img/alma-circle.webp" alt=""><span>Vprašaj Almo</span></a>
+    <button class="nav-lang" aria-label="Jezik">SLO</button>
+    <a class="btn btn-ink nav-cta" href="#dozivetja">Načrtuj potovanje</a>
+    <button class="nav-burger" id="burger" aria-label="Meni"><span></span><span></span></button>
+  </div>
+
+  <!-- Mega menu -->
+  <div class="mega" id="mega">
+    <div class="mega-panel" data-panel="dozivetja">
+      <div class="mega-cols">
+        <div><h4>Aktivne počitnice</h4><a href="#">Pohodništvo in gorništvo</a><a href="#">Kolesarjenje</a><a href="#">Vodne aktivnosti</a><a href="#">Adrenalinski športi</a><a href="#">Zimske aktivnosti</a><a href="#">Jahanje</a><a href="#">Golf</a></div>
+        <div><h4>Gastronomija</h4><a href="#">Okusi Slovenije</a><a href="#">Vina Slovenije</a><a href="#">Kje jesti</a><a href="#">Top za gurmane</a><a href="#">Lokalno običajno</a><h4 class="mt">Terme in zdravilišča</h4><a href="#">Zdravje</a><a href="#">Razvajanje in nega</a><a href="#">Aquafun</a></div>
+        <div><h4>V naravi</h4><a href="#">Vode Slovenije</a><a href="#">Naravni parki</a><a href="#">Jame</a><a href="#">Gore in hribi</a><a href="#">Podeželje</a><h4 class="mt">Več</h4><a href="#">Umetnost in kultura</a><a href="#">Družinske počitnice</a><a href="#">Romantična doživetja</a><a href="#">Dogodki</a></div>
+      </div>
+      <a class="mega-feature" href="#dozivetja">
+        <img src="assets/img/Radgonske_gorice-Untouched-cover.jpg" alt="">
+        <div><strong>Edinstvena doživetja Slovenije</strong><span>Okusite prvo peneče se vino na svetu, pridelano v popolni temi.</span></div>
+      </a>
+    </div>
+    <div class="mega-panel" data-panel="destinacije">
+      <div class="mega-cols">
+        <div><h4>Alpska Slovenija</h4><a href="#">Bled</a><a href="#">Bohinj</a><a href="#">Dolina Soče</a><a href="#">Kranjska Gora</a><a href="#">Maribor - Pohorje</a><a href="#">Zgornja Savinjska dolina</a></div>
+        <div><h4>Ljubljana &amp; Osrednja</h4><a href="#">Ljubljana</a><a href="#">Idrija</a><a href="#">Kamnik</a><a href="#">Škofja Loka</a><a href="#">Novo mesto</a><a href="#">Bela krajina</a></div>
+        <div><h4>Termalna Panonska</h4><a href="#">Ptuj</a><a href="#">Celje</a><a href="#">Laško</a><a href="#">Rogaška Slatina</a><a href="#">Pomurje</a><h4 class="mt">Mediteranska &amp; Kraška</h4><a href="#">Portorož - Piran</a><a href="#">Brda</a><a href="#">Kras</a><a href="#">Koper</a></div>
+      </div>
+      <a class="mega-feature" href="#znamenitosti">
+        <img src="assets/hero/bled.jpg" alt="">
+        <div><strong>Top 10 znamenitosti</strong><span>Največji slovenski zakladi čakajo na vas.</span></div>
+      </a>
+    </div>
+    <div class="mega-panel" data-panel="nacrt">
+      <div class="mega-cols">
+        <div><h4>Spoznajte Slovenijo</h4><a href="#">Zgodovina in kultura</a><a href="#">Narava</a><a href="#">Geografska raznolikost</a></div>
+        <div><h4>Praktične informacije</h4><a href="#">Mejne formalnosti</a><a href="#">Odpiralni časi</a><a href="#">Turistično informacijski centri</a><a href="#">Zdravstvo</a><a href="#">Varnost</a></div>
+        <div><h4>Prihod v Slovenijo</h4><a href="#">Z avtom</a><a href="#">Z letalom</a><a href="#">Z vlakom</a><a href="#">Z avtobusom</a><h4 class="mt">Več</h4><a href="#">Nastanitve</a><a href="#">Dostopni turizem</a><a href="#">Digitalni nomadi</a></div>
+      </div>
+      <a class="mega-feature" href="#nacrt">
+        <img src="assets/hero/zelena.jpg" alt="">
+        <div><strong>Koristne informacije</strong><span>Varnostne smernice za brezskrbno potovanje v Slovenijo.</span></div>
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#dozivetja">Doživetja</a><a href="#regije">Destinacije</a><a href="#nacrt">Potovalni načrt</a><a href="#zgodbe">Zgodbe</a><a href="#alma">Vprašaj Almo</a>
+</div>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-top">
+    <h1 class="hero-title"><span class="line"><span>Butična.</span></span><span class="line"><span class="g">Zelena.</span></span><span class="line"><span>Raznolika.</span></span></h1>
+    <div class="hero-side">
+      <p>Ustvarite si popoln jesenski dan. Po svoje. Dežela, kjer se srečajo alpski, panonski in mediteranski svet, vas čaka na vsakem koraku.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-ink" href="#dozivetja">Sestavi svoj načrt <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn-ghost" href="#znamenitosti">Raziščite Slovenijo</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-media" id="heroMedia">
+    <div class="hero-frame" id="heroFrame">
+      <div class="hero-slides" id="heroSlides">
+        <img class="is-active" src="assets/img/Ribnica_ZZMS_Neekskluziva_Jost_Gantar_16.jpg" alt="Jesenski SUP po reki" data-place="Jesen v Sloveniji" data-coord="45.7389° N · 14.7297° E">
+        <img src="assets/hero/bled.jpg" alt="Blejsko jezero" data-place="Bled z Blejskim jezerom" data-coord="46.3633° N · 14.0940° E">
+        <img src="assets/hero/soca.jpg" alt="Reka Soča" data-place="Dolina smaragdne Soče" data-coord="46.3378° N · 13.5525° E">
+        <img src="assets/hero/zelena.jpg" alt="Vinogradi" data-place="Goriška brda" data-coord="45.9978° N · 13.5389° E">
+        <img src="assets/hero/piran.jpg" alt="Piran" data-place="Piran s solinami" data-coord="45.5285° N · 13.5683° E">
+      </div>
+      <div class="hero-grid" aria-hidden="true"><i></i><i></i><i></i></div>
+      <div class="hero-meta">
+        <div class="hero-place"><span id="heroPlace">Jesen v Sloveniji</span><span class="mono" id="heroCoord">45.7389° N · 14.7297° E</span></div>
+        <div class="hero-progress" id="heroProgress"><i></i><i></i><i></i><i></i><i></i></div>
+      </div>
+    </div>
+
+      <!-- Planner card -->
+      <div class="planner" id="planner">
+        <div class="planner-head">
+          <div><strong>Vaš jesenski dan</strong><span>Izberite, kar vas veseli</span></div>
+          <span class="planner-dot"></span>
+        </div>
+        <div class="seg" id="plannerDays">
+          <button class="is-on" data-days="1">1 dan</button><button data-days="3">Vikend</button><button data-days="7">Teden</button>
+        </div>
+        <div class="planner-chips" id="plannerChips">
+          <button class="chip is-on" data-cat="narava">Narava</button>
+          <button class="chip is-on" data-cat="kulinarika">Kulinarika</button>
+          <button class="chip" data-cat="kultura">Kultura</button>
+          <button class="chip" data-cat="adrenalin">Aktivno</button>
+        </div>
+        <dl class="planner-rows">
+          <div><dt>Predlogi doživetij</dt><dd class="mono" id="plannerCount">0</dd></div>
+          <div><dt>Cena že od</dt><dd class="mono" id="plannerFrom">0,00 €</dd></div>
+        </dl>
+        <a class="btn btn-ink btn-block" href="#dozivetja" id="plannerGo">Pokaži predloge <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="stats section" id="stevilke">
+  <div class="sec-head">
+    <h2 class="h2">Majhna dežela.<br><span class="muted">Velike številke.</span></h2>
+    <p class="lead">Spoj panonskega, alpskega in mediteranskega sveta se odraža v naravni, kulturni in gastronomski raznolikosti.</p>
+  </div>
+  <div class="stats-row">
+    <div class="stat">
+      <div class="stat-viz viz-squares"><i></i><i></i><i></i><i></i></div>
+      <div class="stat-num mono" data-count="4">0</div>
+      <p>turistične regije, od Alp do morja</p>
+    </div>
+    <div class="stat">
+      <div class="stat-viz viz-dots" id="dots24"></div>
+      <div class="stat-num mono" data-count="24">0</div>
+      <p>gastronomskih regij</p>
+    </div>
+    <div class="stat">
+      <div class="stat-viz viz-bars"><i style="--h:.55"></i><i style="--h:.8"></i><i style="--h:1"></i></div>
+      <div class="stat-num mono" data-count="3">0</div>
+      <p>vinorodne dežele</p>
+    </div>
+    <div class="stat">
+      <div class="stat-viz viz-line"><svg viewBox="0 0 120 40" preserveAspectRatio="none"><path d="M0 38 C 30 36, 50 30, 70 20 S 105 4, 120 2"/></svg></div>
+      <div class="stat-num mono"><span data-count="450">0</span><small>+</small></div>
+      <p>let raste najstarejša trta na svetu</p>
+    </div>
+    <div class="stat">
+      <div class="stat-viz viz-depth"><span></span></div>
+      <div class="stat-num mono"><span data-count="160">0</span><small>m</small></div>
+      <p>pod zemljo leži najgloblja jedilnica</p>
+    </div>
+  </div>
+</section>
+
+<!-- REGIONS -->
+<section class="regions section" id="regije">
+  <div class="sec-head">
+    <h2 class="h2">Štiri regije.<br><span class="muted">Ena dežela.</span></h2>
+    <p class="lead">Izberite svet, ki vas kliče. Vsaka regija ima svoj ritem, svoje okuse in svoje poti.</p>
+  </div>
+  <div class="regions-wrap">
+    <div class="regions-list" id="regionsList" role="tablist">
+      <button class="region-row is-on" data-region="0" role="tab">
+        <span class="region-swatch" style="--c:#8DAE3C"></span>
+        <span class="region-name">Alpska Slovenija</span>
+        <span class="region-count mono">11 destinacij</span>
+      </button>
+      <button class="region-row" data-region="1" role="tab">
+        <span class="region-swatch" style="--c:#4E7A6A"></span>
+        <span class="region-name">Ljubljana &amp; Osrednja Slovenija</span>
+        <span class="region-count mono">8 destinacij</span>
+      </button>
+      <button class="region-row" data-region="2" role="tab">
+        <span class="region-swatch" style="--c:#C9A24A"></span>
+        <span class="region-name">Termalna Panonska Slovenija</span>
+        <span class="region-count mono">10 destinacij</span>
+      </button>
+      <button class="region-row" data-region="3" role="tab">
+        <span class="region-swatch" style="--c:#3C7FA0"></span>
+        <span class="region-name">Mediteranska &amp; Kraška Slovenija</span>
+        <span class="region-count mono">7 destinacij</span>
+      </button>
+    </div>
+    <div class="region-card" id="regionCard">
+      <div class="region-img"><img id="regionImg" src="assets/hero/alpska.jpg" alt=""></div>
+      <div class="region-body">
+        <h3 id="regionTitle">Alpska Slovenija</h3>
+        <p id="regionDesc"></p>
+        <div class="region-dest" id="regionDest"></div>
+        <a class="btn btn-ink" href="#" id="regionLink">Top 5 doživetij regije <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TOP 10 -->
+<section class="landmarks section" id="znamenitosti">
+  <div class="sec-head">
+    <h2 class="h2">Kraji, ki navdihujejo</h2>
+    <p class="lead">Največji slovenski zakladi čakajo na vas. Na kakšen način boste začutili Slovenijo?</p>
+  </div>
+  <div class="bento">
+    <a class="tile t-bled" href="#"><img src="assets/hero/bled.jpg" alt=""><div class="tile-info"><h3>Bled z Blejskim jezerom</h3><p>Svetovno znan biser ob robu Triglavskega narodnega parka.</p><span class="mono">46.3633° N · 14.0940° E</span></div></a>
+    <a class="tile t-soca" href="#"><img src="assets/hero/soca.jpg" alt=""><div class="tile-info"><h3>Dolina smaragdne Soče</h3><p>Soča, reka tisočerih posebnosti.</p><span class="mono">46.3378° N · 13.5525° E</span></div></a>
+    <a class="tile" href="#"><img src="assets/hero/piran.jpg" alt=""><div class="tile-info"><h3>Piran s solinami</h3><span class="mono">45.5285° N · 13.5683° E</span></div></a>
+    <a class="tile" href="#"><img src="assets/hero/postojna.jpg" alt=""><div class="tile-info"><h3>Postojnska jama</h3><span class="mono">45.7826° N · 14.2036° E</span></div></a>
+    <a class="tile t-wide" href="#"><img src="assets/hero/ljubljana.jpg" alt=""><div class="tile-info"><h3>Ljubljana</h3><p>Živahna. Živa. Šarm manjše prestolnice in samozavest velikih evropskih mest.</p><span class="mono">46.0511° N · 14.5051° E</span></div></a>
+    <a class="tile" href="#"><img src="assets/hero/velikaplanina.jpg" alt=""><div class="tile-info"><h3>Velika planina</h3><p>Največje pastirsko naselje v Evropi.</p></div></a>
+    <a class="tile" href="#"><img src="assets/hero/lipica.jpg" alt=""><div class="tile-info"><h3>Lipica</h3><p>Evropsko pomembna zibelka lipicancev.</p></div></a>
+    <a class="tile" href="#"><img src="assets/hero/logarska.jpg" alt=""><div class="tile-info"><h3>Logarska dolina</h3><p>V zeleni dolini prisluhnite šumenju slapov.</p></div></a>
+    <a class="tile" href="#"><img src="assets/hero/trta.jpg" alt=""><div class="tile-info"><h3>Najstarejša trta na svetu</h3><p>Sredi Maribora raste že več kot 450 let.</p></div></a>
+    <a class="tile" href="#"><img src="assets/hero/unesco.jpg" alt=""><div class="tile-info"><h3>Svetovna dediščina UNESCO</h3><p>Slovenske zakladnice svetovne dediščine.</p></div></a>
+  </div>
+</section>
+
+<!-- EXPERIENCES MARKETPLACE -->
+<section class="exp section" id="dozivetja">
+  <div class="sec-head">
+    <h2 class="h2">Edinstvena doživetja Slovenije</h2>
+    <p class="lead">Butična doživetja z zgodbo, ki jih ustvarjajo izjemni posamezniki. Dodajte jih v svoj načrt in sproti spremljajte proračun.</p>
+  </div>
+  <div class="exp-toolbar">
+    <div class="tabs" id="expTabs">
+      <button class="is-on" data-f="all">Vse <span class="mono" data-c="all"></span></button>
+      <button data-f="kulinarika">Kulinarika <span class="mono" data-c="kulinarika"></span></button>
+      <button data-f="narava">Narava <span class="mono" data-c="narava"></span></button>
+      <button data-f="kultura">Kultura <span class="mono" data-c="kultura"></span></button>
+      <button data-f="adrenalin">Aktivno <span class="mono" data-c="adrenalin"></span></button>
+    </div>
+    <div class="sort">
+      <span>Razvrsti</span>
+      <div class="seg seg-sm" id="expSort"><button class="is-on" data-s="pop">Priljubljeno</button><button data-s="asc">Cena</button></div>
+    </div>
+  </div>
+  <div class="exp-wrap">
+    <div class="exp-grid" id="expGrid"></div>
+    <aside class="receipt" id="receipt">
+      <div class="receipt-head"><strong>Vaš načrt</strong><span class="mono" id="rcCount">0 doživetij</span></div>
+      <ul class="receipt-list" id="rcList"><li class="receipt-empty">Dodajte doživetja s klikom na <b>+</b> in tu bo nastal vaš itinerar.</li></ul>
+      <div class="receipt-sum">
+        <div><span>Vmesni seštevek</span><span class="mono" id="rcSub">0,00 €</span></div>
+        <div><span>Osebe</span><span class="stepper"><button id="pMinus" aria-label="Manj">−</button><span class="mono" id="pCount">2</span><button id="pPlus" aria-label="Več">+</button></span></div>
+      </div>
+      <div class="receipt-total"><span>Skupaj od</span><span class="mono" id="rcTotal">0,00 €</span></div>
+      <button class="btn btn-green btn-block" id="rcSend">Pošlji načrt na e-pošto</button>
+      <p class="receipt-note">Cene so informativne. Rezervacijo potrdi ponudnik doživetja.</p>
+    </aside>
+  </div>
+  <div class="exp-more"><button class="btn btn-ghost" id="expMore">Prikaži vsa doživetja</button></div>
+</section>
+
+<!-- EVENTS BOARD -->
+<section class="events section" id="dogodki">
+  <div class="sec-head">
+    <h2 class="h2">Kaj se dogaja</h2>
+    <p class="lead">Prireditve, ki ta mesec dajejo Sloveniji poseben utrip.</p>
+  </div>
+  <div class="board" id="board">
+    <div class="board-head mono"><span>Datum</span><span>Dogodek</span><span>Kraj</span><span>Status</span></div>
+    <a class="board-row" href="#"><span class="flip mono" data-text="01.11 - 30.11"></span><span class="flip" data-text="November Gourmet Ljubljana"></span><span class="flip" data-text="Ljubljana"></span><span class="status live">V teku</span></a>
+    <a class="board-row" href="#"><span class="flip mono" data-text="11.11"></span><span class="flip" data-text="Martinovanje v Sloveniji"></span><span class="flip" data-text="Po vsej Sloveniji"></span><span class="status soon">Čez 2 dni</span></a>
+    <a class="board-row" href="#"><span class="flip mono" data-text="20.11 - 10.01"></span><span class="flip" data-text="Večerni sprehod med lučkami"></span><span class="flip" data-text="Arboretum Volčji Potok"></span><span class="status">Kmalu</span></a>
+    <a class="board-row" href="#"><span class="flip mono" data-text="27.11 - 14.01"></span><span class="flip" data-text="December v Ljubljani"></span><span class="flip" data-text="Ljubljana"></span><span class="status">Kmalu</span></a>
+  </div>
+  <div class="events-strip">
+    <img src="assets/img/dsc_0011.jpg" alt="November Gourmet Ljubljana">
+    <img src="assets/img/martinovanje_mala_slika.jpg" alt="Martinovanje">
+    <img src="assets/img/c3a09fad-f8cb-4af2-95ce-cf3db561b680.jpg" alt="Arboretum Volčji Potok">
+    <img src="assets/img/december_v_ljubljani_2022_okrasitev_foto_matjaz_tavcar.jpg" alt="December v Ljubljani">
+  </div>
+</section>
+
+<!-- STORIES -->
+<section class="stories section" id="zgodbe">
+  <div class="sec-head">
+    <h2 class="h2">Zgodbe iz Slovenije</h2>
+    <p class="lead">Poiščite navdih za vaše potovanje v zgodbah iz Slovenije.</p>
+  </div>
+  <div class="stories-grid">
+    <a class="story story-lg" href="#">
+      <div class="story-img"><img src="assets/img/Naslovna_zgodba_Prevc_S.jpg" alt=""></div>
+      <h3>Domen Prevc v Lipici</h3>
+      <p>Kaj povezuje enega najboljših smučarskih skakalcev na svetu z eno najbolj prepoznavnih evropskih pasem konj?</p>
+    </a>
+    <a class="story" href="#">
+      <div class="story-img"><img src="assets/img/vinski_dogodki_s.jpg" alt=""></div>
+      <h3>Martinovanje v Sloveniji: običaji in dogodki</h3>
+      <p>Nazdravite mlademu vinu na martinovanjih po Sloveniji.</p>
+    </a>
+    <a class="story" href="#">
+      <div class="story-img"><img src="assets/img/catez_notranji_park_01.jpg" alt=""></div>
+      <h3>Najboljše jesenske družinske počitnice v termah</h3>
+      <p>Top razlogi, zakaj so terme za družine zanimive tudi jeseni.</p>
+    </a>
+    <a class="story" href="#">
+      <div class="story-img"><img src="assets/img/F011096-jeruzalem_jost_gantar_2-photo-m.jpg" alt=""></div>
+      <h3>Jesenski kviz: Kako dobro poznate Slovenijo?</h3>
+      <p>Sodelujte v kvizu in se potegujte za praktične nagrade.</p>
+    </a>
+  </div>
+</section>
+
+<!-- FEATURE FILM -->
+<section class="film" id="film">
+  <div class="film-media">
+    <img src="assets/img/Feel_Good_towns_Ptuj_Iva_Kranjc_Jost_Gantar_6.jpg" alt="Iva Krajnc Bagola na Ptuju">
+    <button class="film-play" aria-label="Oglejte si video"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></button>
+  </div>
+  <div class="film-body">
+    <h2 class="h2">Mesta po meri ljudi</h2>
+    <blockquote>»Druga mesta morda ponujajo več, a Ptuj ponuja tisto, kar je bolj redko: občutek, da hodiš skozi živo zgodovino, ki te nikoli ne preplavi, ampak te povabi.«</blockquote>
+    <p class="film-by"><strong>Iva Krajnc Bagola</strong><span>igralka, o mestu, v katerem je odraščala</span></p>
+    <a class="btn btn-light" href="#">Odkrijte človeško mero slovenskih mest</a>
+  </div>
+</section>
+
+<!-- ALMA AI -->
+<section class="alma section" id="alma">
+  <div class="alma-copy">
+    <h2 class="h2">Vprašajte Almo.<br><span class="muted">Vaša sopotnica po Sloveniji.</span></h2>
+    <p class="lead">Alma pozna kraje, doživetja in prireditve. Povejte ji, kaj vas veseli, in v nekaj sekundah dobite predlog za svoj dan.</p>
+    <div class="alma-suggest">
+      <button class="chip" data-q="Kam na martinovanje ta vikend?">Kam na martinovanje ta vikend?</button>
+      <button class="chip" data-q="Jesenski dan z otroki v termah">Jesenski dan z otroki v termah</button>
+      <button class="chip" data-q="Najboljša kulinarika v Ljubljani">Najboljša kulinarika v Ljubljani</button>
+    </div>
+  </div>
+  <div class="alma-app">
+    <img class="alma-portrait" src="assets/img/alma.webp" alt="Alma">
+    <div class="chat" id="chat">
+      <div class="chat-head"><img src="assets/img/alma-circle.webp" alt=""><div><strong>Alma</strong><span><i></i>Na voljo</span></div></div>
+      <div class="chat-body" id="chatBody"></div>
+      <form class="chat-input" id="chatForm"><input id="chatIn" placeholder="Vprašajte karkoli o Sloveniji" autocomplete="off"><button aria-label="Pošlji"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></form>
+    </div>
+  </div>
+</section>
+
+<!-- PRACTICAL -->
+<section class="practical section" id="nacrt">
+  <div class="sec-head">
+    <h2 class="h2">Vse za brezskrbno potovanje</h2>
+    <p class="lead">Koristne informacije in varnostne smernice, zbrane na enem mestu.</p>
+  </div>
+  <div class="prac-grid">
+    <div class="prac prac-arrive">
+      <h3>Prihod v Slovenijo</h3>
+      <div class="seg" id="arriveSeg"><button class="is-on" data-m="0">Avto</button><button data-m="1">Letalo</button><button data-m="2">Vlak</button><button data-m="3">Avtobus</button></div>
+      <p id="arriveText">V in po Sloveniji z avtom: ceste, vinjete in nasveti za varno vožnjo.</p>
+      <a class="link" href="#">Preberite več <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+    <div class="prac prac-img"><img src="assets/img/destinacije-ljubljana_poletje26_small.jpg" alt=""><div><h3>Slovenija za digitalne nomade</h3><a class="link" href="#">Odkrijte <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></div>
+    <a class="prac" href="#"><span class="prac-ico"><svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="3"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></span><h3>Mejne formalnosti</h3><p>Kaj potrebujete ob vstopu v državo.</p></a>
+    <a class="prac" href="#"><span class="prac-ico"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.5-7 10-7 10z"/></svg></span><h3>Zdravstvo</h3><p>Zdravniška pomoč in lekarne.</p></a>
+    <a class="prac" href="#"><span class="prac-ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="6" r="2.5"/><path d="M8 21l2-7h4l2 7M7 11h10"/></svg></span><h3>Dostopni turizem</h3><p>Slovenija, odprta in prijazna destinacija.</p></a>
+    <a class="prac" href="#"><span class="prac-ico"><svg viewBox="0 0 24 24"><circle cx="7" cy="9" r="2"/><circle cx="17" cy="9" r="2"/><circle cx="10" cy="5" r="2"/><circle cx="14" cy="5" r="2"/><path d="M12 12c-3 0-5 3-5 5.5 0 1.5 1.5 2 2.5 2s1.5-.5 2.5-.5 1.5.5 2.5.5 2.5-.5 2.5-2C17 15 15 12 12 12z"/></svg></span><h3>S hišnim ljubljenčkom</h3><p>Nasveti za potovanje s štirinožci.</p></a>
+    <a class="prac" href="#"><span class="prac-ico"><svg viewBox="0 0 24 24"><path d="M3 20V10l9-6 9 6v10"/><path d="M9 20v-6h6v6"/></svg></span><h3>Nastanitve</h3><p>Od butičnih hotelov do kmetij.</p></a>
+    <a class="prac" href="#"><span class="prac-ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><h3>Odpiralni časi</h3><p>Trgovine, banke in ustanove.</p></a>
+    <a class="prac" href="#"><span class="prac-ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.01"/></svg></span><h3>Turistično informacijski centri</h3><p>Lokalni nasveti na vsakem koraku.</p></a>
+    <a class="prac" href="#"><span class="prac-ico"><svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6z"/><path d="m9 12 2 2 4-4"/></svg></span><h3>Varnost</h3><p>Številke za klic v sili in nasveti.</p></a>
+  </div>
+</section>
+
+<!-- PRESS -->
+<section class="press">
+  <p>O Sloveniji pišejo</p>
+  <div class="marquee"><div class="marquee-track" id="pressTrack">
+    <img src="assets/press/forbes_logo-small1.png" alt="Forbes"><img src="assets/press/national_geographic_logo_2016.png" alt="National Geographic"><img src="assets/press/conde_nast_traveler_logo.png" alt="Condé Nast Traveler"><img src="assets/press/telegraph_logo_1.png" alt="The Telegraph"><img src="assets/press/esquire_logo_01.png" alt="Esquire"><img src="assets/press/Cycling_Weekly_logo_1.png" alt="Cycling Weekly">
+  </div></div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="news section">
+  <div class="news-card">
+    <img src="assets/hero/narava.jpg" alt="">
+    <div class="news-body">
+      <h2 class="h2">Navdih iz Slovenije, enkrat na mesec.</h2>
+      <form class="news-form" onsubmit="event.preventDefault();this.classList.add('done')">
+        <input type="email" placeholder="Vaš e-naslov" required>
+        <button class="btn btn-green">Prijava</button>
+        <span class="news-ok">Hvala. Kmalu se oglasimo.</span>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="foot-top">
+    <div class="foot-brand">
+      <img src="assets/logo.png" alt="I feel Slovenia">
+      <p>Slovenska turistična organizacija</p>
+      <div class="foot-social">
+        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></svg></a>
+        <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8z"/></svg></a>
+        <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="M10 9v6l5-3z"/></svg></a>
+        <a href="#" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M14 3v11a3 3 0 1 1-3-3M14 3c0 3 2 5 5 5"/></svg></a>
+      </div>
+    </div>
+    <div class="foot-cols">
+      <div><h4>Doživetja</h4><a href="#">Aktivne počitnice</a><a href="#">Gastronomija</a><a href="#">Terme in zdravilišča</a><a href="#">V naravi</a><a href="#">Umetnost in kultura</a><a href="#">Dogodki</a></div>
+      <div><h4>Destinacije</h4><a href="#">Alpska Slovenija</a><a href="#">Ljubljana &amp; Osrednja</a><a href="#">Termalna Panonska</a><a href="#">Mediteranska &amp; Kraška</a><a href="#">Top 10 znamenitosti</a></div>
+      <div><h4>Potovalni načrt</h4><a href="#">Spoznajte Slovenijo</a><a href="#">Praktične informacije</a><a href="#">Nastanitve</a><a href="#">Publikacije</a><a href="#">Kongresi in srečanja</a></div>
+      <div><h4>STO</h4><a href="#">Šport in turizem</a><a href="#">Novinarsko središče</a><a href="#">Mediateka</a><a href="#">Kontakt</a></div>
+    </div>
+  </div>
+  <div class="foot-word" aria-hidden="true">Slovenija</div>
+  <div class="foot-bottom">
+    <span>© 2026 Slovenska turistična organizacija</span>
+    <div><a href="#">Pravna obvestila</a><a href="#">Piškotki</a><a href="#">Izjava o dostopnosti</a><a href="#">Uporabniške pravice</a></div>
+  </div>
+</footer>
+
+<div class="toast" id="toast"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
