@@ -111,10 +111,10 @@
     bars.forEach((b, i) => { b.classList.remove('run'); b.classList.toggle('done', i < cur); });
     void bars[cur].offsetWidth; bars[cur].classList.add('run');
     const s = slides[cur];
-    const place = $('#heroPlace'), coord = $('#heroCoord');
+    const place = $('#heroPlace');
     if (hasGsap) {
-      gsap.to([place, coord], { opacity: 0, y: -6, duration: .25, onComplete: () => { place.textContent = s.dataset.place; coord.textContent = s.dataset.coord; gsap.fromTo([place, coord], { opacity: 0, y: 8 }, { opacity: 1, y: 0, duration: .5, stagger: .06 }); } });
-    } else { place.textContent = s.dataset.place; coord.textContent = s.dataset.coord; }
+      gsap.to(place, { opacity: 0, y: -6, duration: .25, onComplete: () => { place.textContent = s.dataset.place; gsap.fromTo(place, { opacity: 0, y: 8 }, { opacity: 1, y: 0, duration: .5 }); } });
+    } else { place.textContent = s.dataset.place; }
     clearTimeout(heroTimer); heroTimer = setTimeout(() => show(cur + 1), 6000);
   }
   bars.forEach((b, i) => b.addEventListener('click', () => show(i)));
