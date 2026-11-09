@@ -290,8 +290,21 @@
   $$('.alma-suggest .chip').forEach(c => c.addEventListener('click', () => ask(c.dataset.q)));
   $('#chatForm').addEventListener('submit', e => { e.preventDefault(); const v = $('#chatIn').value.trim(); if (!v) return; $('#chatIn').value = ''; ask(v); });
 
-  // ---------- Press marquee (duplicate for seamless loop) ----------
-  const track = $('#pressTrack'); track.innerHTML += track.innerHTML;
+  // ---------- Press marquee (seamless loop at any width) ----------
+  const track = $('#pressTrack'), group = $('.marquee-group', track), logos = group.innerHTML;
+  function buildMarquee() {
+    group.innerHTML = logos;
+    $$('.marquee-group[aria-hidden]', track).forEach(g => g.remove());
+    // one group must be at least as wide as the viewport, so the second copy never leaves a gap
+    while (group.scrollWidth < innerWidth) group.insertAdjacentHTML('beforeend', logos);
+    const copy = group.cloneNode(true); copy.setAttribute('aria-hidden', 'true');
+    track.appendChild(copy);
+    track.style.setProperty('--dur', Math.round(group.scrollWidth / 60) + 's'); // ~60px per second
+  }
+  let mqW = innerWidth;
+  const mqImgs = $$('img', group);
+  Promise.all(mqImgs.map(i => i.complete ? 0 : new Promise(r => i.addEventListener('load', r, { once: true })))).then(buildMarquee);
+  addEventListener('resize', () => { if (Math.abs(innerWidth - mqW) > 80) { mqW = innerWidth; buildMarquee(); } });
 
   // ---------- Board flip ----------
   const CH = 'ABCČDEFGHIJKLMNOPRSŠTUVZŽ0123456789';

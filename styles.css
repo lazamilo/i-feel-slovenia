@@ -340,8 +340,11 @@ a.prac:hover{background:#fff;transform:translateY(-3px)}
 .press{padding:clamp(80px,9vw,160px) 0 0;text-align:center}
 .press p{font-size:16px;color:var(--ink-3);margin-bottom:28px}
 .marquee{overflow:hidden;-webkit-mask:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent);mask:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent)}
-.marquee-track{display:flex;align-items:center;gap:clamp(56px,6vw,120px);width:max-content;animation:marq 40s linear infinite}
-.marquee-track img{height:38px;width:auto;filter:grayscale(1);opacity:.6;mix-blend-mode:multiply}
+.marquee-track{display:flex;width:max-content;animation:marq var(--dur,40s) linear infinite;will-change:transform}
+.marquee:hover .marquee-track{animation-play-state:paused}
+.marquee-group{display:flex;align-items:center;flex-shrink:0;gap:var(--mgap);padding-right:var(--mgap);--mgap:clamp(56px,6vw,120px)}
+.marquee-group img{height:var(--h,32px);width:auto;flex-shrink:0;filter:grayscale(1);opacity:.6;mix-blend-mode:multiply;transition:opacity .3s}
+.marquee-group img:hover{opacity:1}
 @keyframes marq{to{transform:translateX(-50%)}}
 
 /* Newsletter */
@@ -453,6 +456,7 @@ a.prac:hover{background:#fff;transform:translateY(-3px)}
 }
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}
+  .marquee-track{animation-duration:var(--dur,40s)!important}
 }
 .stat-num small{font-size:.45em;letter-spacing:0;margin-left:.08em;color:var(--ink-3)}
 @media (min-width:1920px){
